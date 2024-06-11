@@ -1,0 +1,81 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.main{
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+  background-color: #e5e5e5;
+}
+.container{
+  display: flex;
+  flex-direction: column;
+  min-height: 600px;
+  width: 1000px;
+  max-height: fit-content;
+  background-color: #778da9;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  align-items: center;
+  border-radius: 20px;
+  gap: 10px;
+}
+.inputs{
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  align-items: center;
+  gap: 10px;
+}
+input{
+  padding: 10px 10px;
+  border: none;
+  width: 600px;
+  outline: none;
+  font-size: 20px;
+}
+button{
+  padding: 8px 12px;
+  background-color: #3f37c9;
+  border: none;
+  font-size: 25px;
+  color: white;
+  border-radius: 10px;
+  cursor:pointer;
+  transition: all .2s;
+}
+button:active{
+  transform: scale(.8);
+}
+.tasks{
+  width: 100%;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 10px;
+
+}
+.task{
+  background-color: #0077b6;
+  height: fit-content;
+  width: fit-content;
+  padding: 10px;
+  border-radius: 5px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.delete{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(196, 41, 41);
+}
